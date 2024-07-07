@@ -1,0 +1,113 @@
+@media only screen and (min-width: 1025px) {
+    /* Estilos para dispositivos con ancho mayor a 1025px */
+    body{
+        background-color: #ffffff;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header{
+        margin: 0;
+        position: fixed;
+        background-color: white;
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.144);
+        height: 70px;
+        width: 100%;
+        padding: 0;
+    }
+    .logo{
+        background-color: rgb(37, 100, 238);
+        height: 70px;
+        color: white;
+        font-size: 40px;
+        font-family: Arial;
+        text-decoration: none;
+    }
+    .nav-links{
+        color: rgb(37, 100, 238);
+        font-size: 16px;
+        text-decoration: none;
+        padding: 1px 2%;
+        font-family: Arial;
+    }
+    .nav-login{
+        margin-left: 20%;
+        
+    }
+    .logo:hover{
+        color: rgba(165, 165, 165, 0.233);
+        
+    }
+    .nav-links:hover{
+        color: rgba(165, 165, 165, 0.233);
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+    .nav-links-empleados{
+        color: rgb(37, 100, 238);
+        font-size: 16px;
+        text-decoration: none;
+        font-family: Arial;
+        margin-left: 50%;
+        
+    }
+    .nav-links-empleados:hover{
+        color: rgba(165, 165, 165, 0.233);
+        text-decoration: underline;
+        transition: 0.2s;
+    }
+
+    h1{
+        font-family: Arial;
+        font-weight: 1;
+        text-align: center;
+    }
+    p{
+        font-family: Arial;
+        font-weight: 1;
+        text-align: center;
+    }
+    .imgPrin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        background-color: rgba(221, 220, 220, 0.199);
+        height: 600px;
+        
+    }
+    .card{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .card img{
+        background-color: rgba(221, 220, 220, 0.199);
+        margin-top: 5%;
+    }
+    .description h3{
+        font-family: Arial;
+        font-weight: 1;
+        text-align: center;
+        font-size: 40px;
+    }
+    .btn-more button{
+        background-color: #ffffff;
+        color: rgb(37, 100, 238);
+        border: none;
+        border: 1px solid rgb(37, 100, 238);
+        padding: 5%;
+        font-size: 19px;
+        margin-top:5%;
+        margin-left: 10%;
+        cursor: pointer;
+    }
+
+    .btn-more button:hover{
+        color: grey;
+    }
+
+}
