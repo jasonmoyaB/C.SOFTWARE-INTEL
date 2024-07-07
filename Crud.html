@@ -7,20 +7,34 @@
     <title>Crud empleados</title>
 </head>
 <body>
+
+    <header>
+        <nav>
+            <ul>
+                <a href="index.html" class="logo">Intel</a>
+                <a href="" class="nav-links">PRODUCTOS</a>
+                <a href="" class="nav-links">NOSOTROS</a>
+                <a href="" class="nav-links">ASISTENCIA</a>
+                
+            </ul>
+        </nav>
+    </header>  
+    <br><br><br><br><br><br><br>
     <main class="container">
         <section class="crud">
             <h1 class="crud-title">EMPLEADOS</h1>
             <form id="formRegister" class="crud-form">
                 <input type="text" placeholder="Nombre" id="nameInput" class="form-input">
-                <input type="email" placeholder="Email" id="emailInput" class="form-input">
+                <input type="text" placeholder="Telefono" id="emailInput" class="form-input">
                 <input type="text" placeholder="departamento" id="departamentoInput" class="form-input">
                 <button type="submit" id="submitButton" class="button button--primary">Agregar</button>
+                
             </form>
             <table class="crud-table">
                 <thead>
                     <tr>
-                        <th class="table-header">Name</th>
-                        <th class="table-header">Email</th>
+                        <th class="table-header">Nombre</th>
+                        <th class="table-header">Telefono</th>
                         <th class="table-header">Departamento</th>
                         <th class="table-header">accion</th>
                     </tr>

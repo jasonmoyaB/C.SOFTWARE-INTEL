@@ -11,6 +11,7 @@ body,button,input{
     max-width: 800px;
     margin: 0 auto;
     padding: 25px;
+    
 }
 .crud-title{
     text-align: center;
@@ -57,5 +58,34 @@ body,button,input{
 .button--tertiary{
     background-color: red;
     color: #fff;
+}
+header{
+    margin: 0;
+    position: fixed;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.144);
+    height: 70px;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+}
+.logo{
+    background-color: rgb(37, 100, 238);
+    height: 70px;
+    color: white;
+    font-size: 40px;
+    font-family: Arial;
+    text-decoration: none;
+}
+.nav-links{
+    color: rgb(37, 100, 238);
+    font-size: 16px;
+    text-decoration: none;
+    padding: 1px 2%;
+    font-family: Arial;
+}
+.nav-login{
+    margin-left: 20%;
+    
 }
 
