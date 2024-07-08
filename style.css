@@ -59,7 +59,20 @@
         text-decoration: underline;
         transition: 0.2s;
     }
-
+    .gallery{
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        background-color: #cccccc1e;
+        width: 80%;
+        margin: 0 auto;
+        height: 600px;
+    }
+    .gallery img{
+        
+        transition: transform 0.5s ease;
+    }
     h1{
         font-family: Arial;
         font-weight: 1;
@@ -109,5 +122,9 @@
     .btn-more button:hover{
         color: grey;
     }
+    .description p{
+        margin-left: 10%;
+    }
+    
 
 }

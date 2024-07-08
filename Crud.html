@@ -15,35 +15,43 @@
                 <a href="" class="nav-links">PRODUCTOS</a>
                 <a href="" class="nav-links">NOSOTROS</a>
                 <a href="" class="nav-links">ASISTENCIA</a>
-                
+                <h3 class="rol">Rol:Admin</h3>
             </ul>
         </nav>
-    </header>  
+    </header> 
+    <div class="inicio">
+        
+    </div>
+
     <br><br><br><br><br><br><br>
-    <main class="container">
-        <section class="crud">
-            <h1 class="crud-title">EMPLEADOS</h1>
-            <form id="formRegister" class="crud-form">
-                <input type="text" placeholder="Nombre" id="nameInput" class="form-input">
-                <input type="email" placeholder="Email" id="emailInput" class="form-input">
-                <input type="text" placeholder="departamento" id="departamentoInput" class="form-input">
-                <button type="submit" id="submitButton" class="button button--primary">Agregar</button>
-            </form>
-            <table class="crud-table">
-                <thead>
-                    <tr>
-                        <th class="table-header">Nombre</th>
-                        <th class="table-header">Telefono</th>
-                        <th class="table-header">Departamento</th>
-                        <th class="table-header">accion</th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody" class="table-body">
-                    
-                </tbody>
-            </table>
-        </section>
-    </main>
-    <script src="app.js"></script>
+    <div class="container-crud">
+        <main class="container">
+            <section class="crud">
+                <h1 class="crud-title">EMPLEADOS</h1>
+                <form id="formRegister" class="crud-form">
+                    <input type="text" placeholder="Nombre" id="nameInput" class="form-input">
+                    <input type="email" placeholder="Email" id="emailInput" class="form-input">
+                    <input type="text" placeholder="departamento" id="departamentoInput" class="form-input">
+                    <button type="submit" id="submitButton" class="button button--primary">Agregar</button>
+                </form>
+                <table class="crud-table">
+                    <thead>
+                        <tr>
+                            <th class="table-header">Nombre</th>
+                            <th class="table-header">Telefono</th>
+                            <th class="table-header">Departamento</th>
+                            <th class="table-header">accion</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody" class="table-body">
+                        
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    
+    <div id="clock"></div>
+    <script src="crud.js"></script>
 </body>
 </html>

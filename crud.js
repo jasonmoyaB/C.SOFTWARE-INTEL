@@ -24,7 +24,7 @@ form.addEventListener("submit", function(event) {
         renderTable();
         form.reset();
     } else {
-        alert("Llene todos los datos para continuar");
+        alert("Llene todos los datos");
     }
 });
 
@@ -76,9 +76,10 @@ function renderTable() {
 
         // Agregar filas al table body
         tableBody.appendChild(row);
+        
     });
 }
-
+//funciones para editar y eliminar tabla
 function editData(index) {
     const item = data[index];
     nameInput.value = item.name;
@@ -93,7 +94,29 @@ function deleteData(index) {
     data.splice(index, 1);
     saveDataToLocalStorage();
     renderTable();
+    
 }
 
 renderTable();
 
+//vamos a hacer el reloj
+
+function updateClock() {
+    //para tomar el tiempo real
+    const now=new Date();
+
+    //tomar hora, minutos y seg
+    const hours=now.getHours().toString().padStart(2,"0");
+    const minutes=now.getMinutes().toString().padStart(2,"0");
+    const seconds=now.getSeconds().toString().padStart(2,"0");
+
+    //mostrarlo 
+    const timeString=`${hours}:${minutes}:${seconds}`;
+
+    document.getElementById("clock").textContent=timeString;
+}
+//para que se cambie cada 1000s
+setInterval(updateClock,1000);
+
+updateClock();
+    

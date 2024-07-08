@@ -2,16 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
-
 body,button,input{
     font-family: 'montserrat', sans-serif;
+}
+.inicio{
+    background-color: #3782f3;
+    height: 130px;
+    margin: 0 auto;
+    padding: 0;
+}
+.container h1{
+    border: 1px solid #ccc;
 }
 .container{
     max-width: 800px;
     margin: 0 auto;
     padding: 25px;
-    
 }
 .crud-title{
     text-align: center;
@@ -54,10 +62,12 @@ body,button,input{
 .button--secundary{
     background-color: #ffc107;
     color: #fff;
+    
 }
 .button--tertiary{
     background-color: red;
     color: #fff;
+    margin-left: 6%;
 }
 header{
     margin: 0;
@@ -69,9 +79,15 @@ header{
     padding: 0;
     position: fixed;
 }
+.rol{
+    color: #3782f3;
+    padding: 2px 90%;
+    font-size: 19px;
+    font-family: 'montserrat', sans-serif;
+}
 .logo{
     background-color: rgb(37, 100, 238);
-    height: 70px;
+    height: 80px;
     color: white;
     font-size: 40px;
     font-family: Arial;
@@ -89,3 +105,16 @@ header{
     
 }
 
+#clock{
+    margin-top: 18%;
+    margin-left: 91%;
+    font-size: 30px;
+    background-color: #3782f3fd;
+    width: 120px;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.11);
+    
+    
+}
