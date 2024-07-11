@@ -23,8 +23,18 @@ form.addEventListener("submit", function(event) {
         // Actualizar empleados
         renderTable();
         form.reset();
+
+        Swal.fire({
+            title: "Datos agregados",
+            text: "Se agregaron datos",
+            icon: "success"
+          });
     } else {
-        alert("Llene todos los datos");
+        Swal.fire({
+            title: "Faltan datos",
+            text: "Llene todos los dados",
+            icon: "error"
+          });
     }
 });
 
@@ -79,7 +89,7 @@ function renderTable() {
         
     });
 }
-//funciones para editar y eliminar tabla
+//funciones para editar tabla
 function editData(index) {
     const item = data[index];
     nameInput.value = item.name;
@@ -88,13 +98,19 @@ function editData(index) {
     data.splice(index, 1);
     saveDataToLocalStorage();
     renderTable();
-}
 
+}
+//funcion para eliminar tabla
 function deleteData(index) {
     data.splice(index, 1);
     saveDataToLocalStorage();
     renderTable();
-    
+
+    Swal.fire({
+        title: "Se eliminaron los datos",
+        text: "Datos eliminados",
+        icon: "success"
+      });
 }
 
 renderTable();
@@ -119,4 +135,5 @@ function updateClock() {
 setInterval(updateClock,1000);
 
 updateClock();
-    
+
+

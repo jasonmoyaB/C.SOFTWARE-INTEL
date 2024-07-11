@@ -20,6 +20,8 @@ body,button,input{
     max-width: 800px;
     margin: 0 auto;
     padding: 25px;
+    border: 1px solid #CCC;
+   
 }
 .crud-title{
     text-align: center;
@@ -106,7 +108,7 @@ header{
 }
 
 #clock{
-    margin-top: 18%;
+    margin-top: 12%;
     margin-left: 91%;
     font-size: 30px;
     background-color: #3782f3fd;
@@ -115,6 +117,5 @@ header{
     border-radius: 10px;
     border: 1px solid #ccc;
     box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.11);
-    
-    
 }
+

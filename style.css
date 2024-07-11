@@ -125,6 +125,63 @@
     .description p{
         margin-left: 10%;
     }
-    
-
+    .footer{
+        background-color: #cccccc4b;
+        height:500px;
+    }
+    .footer img{
+        margin-top: 12%;
+        margin-left: 20%;
+    }
+    .footer nav{
+        text-align: center;
+    }
+    .footer nav a{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+        padding: 1%;
+        display: inline-block;
+    }
+    .footer nav a:hover{
+        text-decoration: underline;
+    }
+    .links-final{
+        text-align: center;
+        
+    }
+    .final-description{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+    }
+    .dark-button{
+        padding:1px 90%;
+    }
+    /*Estilos para el dark mode button*/
+body{
+    background-color: white;
+    color: rgb(58, 58, 58);
+    transition: background-color 1s ,color 1s;
 }
+body.dark-mode{
+    background-color: rgb(27, 27, 27);
+    color: #fff;
+}
+.dark-button button{
+    cursor: pointer;
+    background-color: none;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+   
+}
+.dark-button button:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.199);
+    transition: 1s;
+}
+}
+
+
